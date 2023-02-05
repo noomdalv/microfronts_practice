@@ -1,1 +1,1 @@
-console.log('Marketing App Loaded')
+import('./bootstrap');
