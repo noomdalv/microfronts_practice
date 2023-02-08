@@ -1,2 +1,2 @@
 import("./bootstrap")
-console.log('Container loaded')
+console.log('Container loaded!')
