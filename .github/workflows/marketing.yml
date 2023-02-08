@@ -1,4 +1,7 @@
 name: deploy-marketing
+
+on:
+  push:
     branches:
       - main
       - development
