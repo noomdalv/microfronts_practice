@@ -12,8 +12,10 @@ export default () => {
     return <>
         <BrowserRouter>
             <StylesProvider generateClassName={generateClassName}>
-                <Header />
-                <MarketingApp />
+                <>
+                    <Header />
+                    <MarketingApp />
+                </>
             </StylesProvider>
         </BrowserRouter>
     </>
