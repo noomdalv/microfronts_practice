@@ -5,7 +5,7 @@ import App from './App'
 
 // Mount function to start up the app
 
-const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
+const mount = (el, { onNavigate, defaultHistory, initialPath, onSignIn }) => {
     const history = defaultHistory || createMemoryHistory({
         initialEntries: [initialPath]
     });
@@ -15,7 +15,7 @@ const mount = (el, { onNavigate, defaultHistory, initialPath }) => {
     }
 
     ReactDOM.render(
-        <App history={history} />, el
+        <App history={history} onSignIn={onSignIn} />, el
     )
 
     return {
