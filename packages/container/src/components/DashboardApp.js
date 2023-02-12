@@ -1,7 +1,7 @@
 import { mount } from 'DashboardApp/Dashboard'
 import React, { useRef, useEffect } from 'react'
 
-export default ({ onSignIn }) => {
+export default () => {
     const ref = useRef(null);
 
     useEffect(() => {
