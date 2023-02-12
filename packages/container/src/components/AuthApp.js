@@ -12,6 +12,8 @@ export default ({ onSignIn }) => {
         const { onParentNavigate } = mount(ref.current, {
             initialPath: pathname,
             onNavigate: ({ pathname: nextPathname }) => {
+                const { pathname } = history.location;
+
                 if (pathname !== nextPathname) {
                     history.push(nextPathname);
                 }
